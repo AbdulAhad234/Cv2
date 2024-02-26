@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: sans-serif;
+    background-color: rgb(114, 119, 120); 
+}
+
+.container {
+    background: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 60px auto; /* Adjusted margin for better responsiveness */
+    padding: 20px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 25px auto;
+    border: 15px groove deepskyblue;
+}
+
+.image img {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex: 1;
+    padding: 30px;
+}
+
+.left p {
+    line-height: 2;
+}
+
+.left ul li {
+    line-height: 2;
+}
+
+h2 {
+    background: deepskyblue;
+    padding: 15px;
+    color: #fff;
+    margin: 30px 0;
+    font-size: 20px;
+    border-radius: 0 50px 50px 0;
+}
+
+.right {
+    flex: 1;
+    padding: 30px;
+}
+
+.right h3 {
+    margin-bottom: 15px;
+}
+
+.right p {
+    line-height: 2.9;
+}
+
+.right ul li {
+    line-height: 2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: deepskyblue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 30px auto;
+        padding: 10px;
+    }
+    
+    .image {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .main {
+        flex-direction: column;
+    }
+    
+    .left, .right {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+    
+    .left, .right {
+        padding: 10px;
+    }
+}
